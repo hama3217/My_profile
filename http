@@ -1,0 +1,11 @@
+http {
+.....
+gzip on; #### Enable gzip compression.
+gzip_min_lenth 1; #### Minimum size for compression. If this parameter is set to 1, files smaller
+than 1 byte will not be compressed.
+gzip_comp_level 3; #### Compression ratio. The maximum value is 9 and the minimum value is 1.
+gzip_types text_plain application/javascript #### Types of files that can be compressed
+server {
+.......
+}
+}
